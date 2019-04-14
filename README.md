@@ -2,6 +2,10 @@
 
 Build customer cross network navigation menu
 
+## Intent
+
+- The hope for this repository, is that it will become a larger set of vanilla javascript based projects which can be housed within one larger context.
+
 ## Installation
 
 Install all dependencies. 
