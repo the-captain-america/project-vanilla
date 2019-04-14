@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="webkid react starterkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bupa Mega Menu</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+  <div class="mm-container">
+    <div class="mm-bar">
+      <a href="/" class="mm-bar__logo">
+        <span class="sr-only">Logo</span>
+      </a>
+      <ul class="mm-bar__group">
+        <li class="mm-bar__group-item">
+          <a href="#" class="mm-bar__group-link">Insurance</a>
+
+          <div class="mm-panel multi-panel">
+            <div class="mm-panel__side">
+              <ul class="mm-panel__group">
+                <li>
+                  <button data-category='insurance' class="mm-panel__button is-active">Health Insurance</button>
+                </li>
+                <li>
+                  <button data-category='travel' class="mm-panel__button">Travel Insurance</button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mm-panel__content is-active" data-panel="insurance">
+              <div>
+                <div class="mm-panel__title">
+                  <a href="/" >Health Insurance Homepage</a>
+                </div>
+              </div>
+              <div class='mm-panel__cols'>
+                  <div class="mm-panel__content-group">
+                      <div class="mm-panel__content-group-title">Cover for who you are</div>
+                      <ul >
+                          <li class="mm-panel__content-item">
+                            <a href="/" class="mm-panel__content-link">Get a quote</a>
+                          </li>
+                          <li class="mm-panel__content-item">
+                            <a href="/" class="mm-panel__content-link">Singles</a>
+                          </li>
+                        </ul>
+                  </div>
+
+                  <div class="mm-panel__content-group">
+                      <div class="mm-panel__content-group-title">Cover for what you need</div>
+                      <ul >
+                          <li class="mm-panel__content-item">
+                            <a href="/" class="mm-panel__content-link">Get a quote</a>
+                          </li>
+                          <li class="mm-panel__content-item">
+                            <a href="/" class="mm-panel__content-link">Singles</a>
+                          </li>
+                        </ul>
+                  </div>
+                  <div class="mm-panel__content-group">
+                      <div class="mm-panel__content-group-title">Why choose bupa</div>
+                      <ul >
+                          <li class="mm-panel__content-item">
+                            <a href="/" class="mm-panel__content-link">Get a quote</a>
+                          </li>
+                          <li class="mm-panel__content-item">
+                            <a href="/" class="mm-panel__content-link">Singles</a>
+                          </li>
+                        </ul>
+                  </div>
+                  <div class="mm-panel__content-group">
+                      <div class="mm-panel__content-group-title">Understanding your cover</div>
+                      <ul >
+                          <li class="mm-panel__content-item">
+                            <a href="/" class="mm-panel__content-link">Get a quote</a>
+                          </li>
+                          <li class="mm-panel__content-item">
+                            <a href="/" class="mm-panel__content-link">Singles</a>
+                          </li>
+                        </ul>
+                  </div>
+
+              </div>
+            </div>
+
+            <div class="mm-panel__content" data-panel="travel">
+                <div>
+                    <div class="mm-panel__title">
+                      <a href="/" >Travel Insurance Homepage</a>
+                    </div>
+                  </div>
+                  <div class='mm-panel__cols'>
+                      <div class="mm-panel__content-group">
+
+                          <ul >
+                              <li class="mm-panel__content-item">
+                                <a href="/" class="mm-panel__content-link">Get a quote</a>
+                              </li>
+                              <li class="mm-panel__content-item">
+                                <a href="/" class="mm-panel__content-link">Singles</a>
+                              </li>
+                            </ul>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </li>
+        <li class="mm-bar__group-item">
+          <a href="#" class="mm-bar__group-link">Aged Care</a>
+          <div class="mm-panel single-panel">
+              <div class="mm-panel__content">
+                <!-- loop through -->
+                <div class="mm-panel__content-group-title">Bupa Aged Care</div>
+                <ul>
+                  <li>
+                    <a href="/" class="mm-panel__link">Aged Care Support Line</a>
+                  </li>
+                  <li>
+                    <a href="/" class="mm-panel__link">Getting Started</a>
+                  </li>
+                  <li>
+                    <a href="/" class="mm-panel__link">Types of care</a>
+                  </li>
+                  <li>
+                    <a href="/" class="mm-panel__link">Choosing a care home</a>
+                  </li>
+                  <li>
+                    <a href="/" class="mm-panel__link">Aged care careers</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </li>
+        <li class="mm-bar__group-item">
+            <a href="#" class="mm-bar__group-link">Health Services</a>
+            <div class="mm-panel multi-panel">
+                <div class="mm-panel__side">
+                  <ul class="mm-panel__group">
+                    <li>
+                      <button data-category='health' class="mm-panel__button is-active">Healtheee</button>
+                    </li>
+                    <li>
+                      <button data-category='support' class="mm-panel__button">Support</button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mm-panel__content is-active" data-panel="health">
+                  <!-- loop through -->
+                  <h1 class="mm-panel__title">Community</h1>
+                  <ul>
+                    <li class="">
+                      <a href="/" class="mm-panel__link">Cover for who you are</a>
+                    </li>
+                    <li class="">
+                      <a href="/" class="mm-panel__link">Cover for who you are</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="mm-panel__content" data-panel="support">
+                  <!-- loop through -->
+                  <h1 class="mm-panel__title">Support</h1>
+                  <ul>
+
+                    <li>
+                      <a href="/" class="mm-panel__link">Cover for who you are</a>
+                    </li>
+                    <li>
+                      <a href="/" class="mm-panel__link">Get a quote</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </li>
+        <li class="mm-bar__group-item">
+          <a href="#" class="mm-bar__group-link">Community</a>
+          <div class="mm-panel single-panel">
+              <div class="mm-panel__content">
+                <!-- loop through -->
+                <div class="mm-panel__content-group-title">Bupa Aged Care</div>
+                <ul>
+                  <li>
+                    <a href="/" class="mm-panel__link">Aged Care Support Line</a>
+                  </li>
+                  <li>
+                    <a href="/" class="mm-panel__link">Getting Started</a>
+                  </li>
+                  <li>
+                    <a href="/" class="mm-panel__link">Types of care</a>
+                  </li>
+                  <li>
+                    <a href="/" class="mm-panel__link">Choosing a care home</a>
+                  </li>
+                  <li>
+                    <a href="/" class="mm-panel__link">Aged care careers</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </li>
+
+        <li class="mm-bar__group-item">
+          <a href="#" class="mm-bar__group-link">Your Health</a>
+          <div class="mm-panel single-panel">
+              <div class="mm-panel__content">
+                <!-- loop through -->
+                <div class="mm-panel__content-group-title">Bupa Aged Care</div>
+                <ul>
+                  <li>
+                    <a href="/" class="mm-panel__link">Aged Care Support Line</a>
+                  </li>
+                  <li>
+                    <a href="/" class="mm-panel__link">Getting Started</a>
+                  </li>
+                  <li>
+                    <a href="/" class="mm-panel__link">Types of care</a>
+                  </li>
+                  <li>
+                    <a href="/" class="mm-panel__link">Choosing a care home</a>
+                  </li>
+                  <li>
+                    <a href="/" class="mm-panel__link">Aged care careers</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="mm-overlay"></div>
+  </div>
+  <!-- end  mm-main -->
+
+  <div class="dev-viewport-util"></div>
+  </div>
+  </div>
+
+  <div style="max-width: 1200px; margin-left: auto; margin-right: auto; height: 400px; padding-top: 40px;background: #0079c8;">
+    <div style="display: block; padding: 8px; border-radius: 4px; border: 1px solid #ccc; background: white; margin-left: 20px; margin-right: 20px; padding-top: 20px;">
+      <p style="margin: 0; line-height: 20px; font-size: 16px; color: #ccc; padding: 16px;">The component above should push the content below it downward. The component will need to sit within an "absolute positioned"
+      element in order to take this effect. However, this could cause some problems for sites that already have a "sticky
+      navigation bar".</p>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

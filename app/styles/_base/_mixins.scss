@@ -1,0 +1,206 @@
+// screen size
+$sm-screen: 480px;
+$md-screen: 768px;
+$standard-screen: 1024px;
+$wide-screen: 1280px;
+
+// general colors
+$c-black: #000;
+$c-white: #fff;
+$c-red: #d90014;
+$c-green: #007a3d;
+$c-yellow: #fdf6dd;
+
+// primary bupa brand colors
+$c-digital-blue: #0079c8;
+$c-navy: #00335b;
+$c-aged-care: #c6007e;
+$c-dental: #008385;
+$c-insurance-support: #f59bbb;
+$c-insurance-category: #6a2ca1;
+$c-insurance-other: #db3907;
+$c-medical: #007a3d;
+$c-optical: #678004;
+
+// primary bupa brand colors
+$c-main-1: $c-digital-blue;
+$c-main-2: $c-insurance-category;
+$c-main-3: $c-aged-care;
+$c-main-4: $c-dental;
+$c-main-5: $c-optical;
+
+// bupa brand color variations
+$c-neu-a-0: #333;
+$c-neu-a-1: #6c6e71;
+$c-neu-a-2: #919295;
+$c-neu-a-3: #b5b6b8;
+$c-neu-a-4: #e2e2e3;
+
+// Alterations
+$c-print-1: tint($c-navy, percentage(95/100));
+$vertical-rhythm: 8;
+$border-radius: 4px;
+
+// Function
+@function vs($factor: 1) { // visual spacing, to replace $spacing
+  @return unquote(8 * $factor + px);
+}
+
+@function vr($factor: 1, $unit: px) {
+  @return $vertical-rhythm * $factor + $unit;
+}
+
+// Mixins
+
+@mixin screen($size) {
+  $sm: $sm-screen;
+  $md: $md-screen;
+  $st: $standard-screen;
+  $wide: $wide-screen;
+
+  @if $size == sm-phone {
+    @media (max-width: $sm) {
+      @content;
+    }
+  }
+
+  @if $size == phone {
+    @media (max-width: $md - 1px) {
+      @content;
+    }
+  }
+
+  @if $size == tablet {
+    @media (min-width: $md) and (max-width: $st - 1px) {
+      @content;
+    }
+  }
+
+  @if $size == standard {
+    @media (min-width: $st) and (max-width: $wide - 1px) {
+      @content;
+    }
+  }
+
+  @if $size == wide {
+    @media (min-width: $wide) {
+      @content;
+    }
+  }
+
+  @if $size == desktop {
+    @media (min-width: $st) {
+      @content;
+    }
+  }
+
+  @if $size == mobile {
+    @media (max-width: $st - 1px) {
+      @content;
+    }
+  }
+
+  @if $size == standard-and-mobile {
+    @media (max-width: $wide - 1px) {
+      @content;
+    }
+  }
+
+  @if $size == standard-and-tablet {
+    @media (min-width: $md) and (max-width: $wide - 1px) {
+      @content;
+    }
+  }
+}
+
+@mixin screen-smaller-than($px) {
+  @media screen and (max-width: $px) {
+    @content;
+  }
+}
+
+@mixin screen-bigger-than($px) {
+  @media screen and (min-width: $px) {
+    @content;
+  }
+}
+
+@mixin background-opacity($color, $opacity: 0.2) {
+    background: $color;
+    background: rgba($color, $opacity);
+}
+
+// Headings
+
+@mixin font-weight($weight: medium) {
+  @if $weight == light {
+    font-weight: 100;
+  }
+
+  @if $weight == regular {
+    font-weight: 200;
+  }
+
+  @if $weight == medium {
+    font-weight: 300;
+  }
+
+  @if $weight == bold {
+    font-weight: 400;
+  }
+}
+
+@mixin hover {
+  &:hover,
+  &:focus,
+  &:active {
+    @content;
+  }
+}
+
+@mixin use-font($size: null, $line-height: null, $weight: null) {
+  @if $size != null {
+    font-size: $size;
+  }
+  @if $line-height != null {
+    line-height: $line-height;
+  }
+  @if $weight != null {
+    font-weight: $weight;
+  }
+ }
+
+@mixin transition($type: all, $time-set: 1) {
+  $time: .5s;
+  transition: $type $time ease;
+}
+
+@mixin icon-base ($name: 'Material Icons') {
+  font-family: '#{$name}';
+  font-size: vs(3);
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: inherit;
+  text-transform: none;
+  speak: none;
+}
+
+@mixin primary-font {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  @include primary-font;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  &:visited {
+    text-decoration: none;
+  }
+  &:active {
+    text-decoration: none;
+  }
+}

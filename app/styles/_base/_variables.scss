@@ -1,0 +1,23 @@
+$assetPathFonts: '../assets/fonts';
+$assetPathVendors: '../assets/vendors';
+$assetPathIcons : "../assets/icons";
+
+$icon-insurance: '#{$assetPathIcons}/ic-insurance-white.svg';
+$icon-aged: '#{$assetPathIcons}/ic-agedcare-white.svg';
+$icon-services: '#{$assetPathIcons}/ic-health-services-white.svg';
+$icon-community: '#{$assetPathIcons}/ic-community-white.svg'; 
+$icon-your-health: '#{$assetPathIcons}/ic-your-health-white.svg';
+
+// Fonts
+$primary-font-bold: 'Montserrat-semibold', sans-serif;
+$primary-font-regular: 'Montserrat-regular', sans-serif;
+
+// Check zindex values
+$zIndexOverlay: 1000;
+$zIndexXnn: 1050;
+
+// Colors
+$c-navy: #00335b;
+$c-white: #fff;
+$c-digital: #0079c8;
+$c-grey: #f2f5f7;
